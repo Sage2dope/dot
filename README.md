@@ -55,7 +55,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-7. Run the command to populate the template needed for the project environment variables
+7. Run the command to populate the template needed for the project backend environment variables
 ```bash
 cp .env.example .env
 ```
@@ -89,7 +89,7 @@ cd frontend
 npm install
 ```
 
-3. Run the command to populate the template needed for the project environment variables
+3. Run the command to populate the template needed for the project frontend environment variables
 ```bash
 cp .env.example .env
 ```
