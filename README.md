@@ -22,14 +22,37 @@ I'm a Data Analyst & Developer<br>I've spent the last 4 years building, scaling 
 
 ```bash
 git clone https://github.com/Sage2dope/dot.git
+```
 
+2. Navigate to project directory 
+```bash
 cd dot 
-
-
-2. Backend Setup
-
+```
+```bash
 cd backend
+```
+
+
+3. Setting up the Virtual Environment
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+4. Activate the virtual environment using the following command 
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+ # On Windows use 
+ venv\Scripts\activate
+```
+5. Setting up all dependencies
+```bash
+# Use the following code to install all dependencies required for the backend
 pip install -r requirements.txt
+```
+
+
 cp .env.example .env
