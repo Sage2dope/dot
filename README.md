@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm a Data Analyst & Developer<br>I've spent the last 4 years building, scaling software and analysing data for companies.<br>I also have a gaming channel where I review gaming gadgets online<br>In case you've got a good product you like to review 🎮. Let's connect!
+I'm a Data Analyst & Software Developer<br>I've spent the last 4 years building, scaling software and analysing data for companies.<br>I also have a gaming channel where I review gaming gadgets online<br>In case you've got a good product you like to review 🎮. Let's connect!
 
 
 ## 🌐 Socials:
