@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm a Data Analyst & Developer<br>I've spent the last 4 years building, scaling software and analysing data for companies.<br>I also have a gaming channel where I review gaming gadgets online<br>In case you've got a good product you like to review 🎮. Let's connect!
+I'm a Data Analyst & Software Developer<br>I've spent the last 4 years building, scaling software and analysing data for companies.<br>I also have a gaming channel where I review gaming gadgets online<br>In case you've got a good product you like to review 🎮. Let's connect!
 
 
 ## 🌐 Socials:
@@ -55,7 +55,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-7. Run the command to populate the template needed for the project environment variables
+7. Run the command to populate the template needed for the project backend environment variables
 ```bash
 cp .env.example .env
 ```
@@ -89,7 +89,7 @@ cd frontend
 npm install
 ```
 
-3. Run the command to populate the template needed for the project environment variables
+3. Run the command to populate the template needed for the project frontend environment variables
 ```bash
 cp .env.example .env
 ```
