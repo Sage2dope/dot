@@ -24,3 +24,12 @@ I'm a Data Analyst & Developer<br>I've spent the last 4 years building, scaling 
 git clone https://github.com/Sage2dope/dot.git
 
 cd dot 
+
+
+2. Backend Setup
+
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
+cp .env.example .env
