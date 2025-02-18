@@ -28,17 +28,18 @@ git clone https://github.com/Sage2dope/dot.git
 ```bash
 cd dot 
 ```
+3. Open a Terminal and navigate to the backend folder
 ```bash
 cd backend
 ```
 
 
-3. Setting up the Virtual Environment
+4. Setting up the Virtual Environment
 
 ```bash
 python -m venv venv
 ```
-4. Activate the virtual environment using the following command 
+5. Activate the virtual environment using the following command 
 
 ```bash
 source venv/bin/activate
@@ -48,28 +49,28 @@ source venv/bin/activate
  # On Windows use 
  venv\Scripts\activate
 ```
-5. Setting up all dependencies
+6. Setting up all dependencies
 ```bash
 
 pip install -r requirements.txt
 ```
 
-6. Run the command to populate the template needed for the project environment variables
+7. Run the command to populate the template needed for the project environment variables
 ```bash
 cp .env.example .env
 ```
 
-7. Apply Migrations to create the database
+8. Apply Migrations to create the database
 ```bash
 python manage.py migrate
 ```
 
-8. Start the development server
+9. Start the development server
 ```bash
 python manage.py runserver
 ```
 
-9. Create a superuser (optional, for admin access)
+10. Create a superuser (optional, for admin access)
 ```bash
 python manage.py createsuperuser
 ```
@@ -77,7 +78,7 @@ python manage.py createsuperuser
 
 #  💻 Frontend Setup Instructions 
 
-1. Open a new terminal and us the following code to navigate to the frontend directory
+1. Open a new terminal and use the following code to navigate to the frontend directory
 ```bash
 cd frontend
 ```
