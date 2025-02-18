@@ -50,7 +50,7 @@ source venv/bin/activate
 ```
 5. Setting up all dependencies
 ```bash
-# Use the following code to install all dependencies required for the backend
+
 pip install -r requirements.txt
 ```
 
@@ -67,4 +67,34 @@ python manage.py migrate
 8. Start the development server
 ```bash
 python manage.py runserver
+```
+
+9. Create a superuser (optional, for admin access)
+```bash
+python manage.py createsuperuser
+```
+
+
+#  💻 Frontend Setup Instructions 
+
+1. Open a new terminal and us the following code to navigate to the frontend directory
+```bash
+cd frontend
+```
+
+2. Installing Dependencies 
+
+```bash
+npm install
+```
+
+3. Run the command to populate the template needed for the project environment variables
+```bash
+cp .env.example .env
+```
+
+4. Start the development server
+
+```bash
+npm run dev
 ```
