@@ -60,6 +60,7 @@ function Form() {
                 if (res.status === 201) alert("Contact added successfully");
                 else alert('Something went wrong');
                 getContacts();
+                resetForm();
             })
             .catch((err) => alert(err));
     };

@@ -99,3 +99,46 @@ cp .env.example .env
 ```bash
 npm run dev
 ```
+
+# ⬆️High-Level Deployment Instructions for Production 
+
+# Recommended Cloud Platform
+
+For ease of deployment and straightforward process, I recommend Heroku as it provides a simple workflow for full-stack applications. Alternatively for easy scalability, AWS Elastic Beanstalk would be the best cloud solution.
+
+# Deployment Steps (Heroku)
+
+1. Preparing the Backend (Django)
+
+Ensure you have a requirements.txt and Procfile in your Django backend directory.
+Install Gunicorn for production:
+
+```bash
+pip install gunicorn
+```
+
+Add gunicorn to requirements.txt
+```bash
+echo "gunicorn" >> requirements.txt
+```
+
+Create a Procfile in the backend directory:
+```bash
+web: gunicorn backend_project.wsgi --log-file -
+```
+
+2. Configure the Database
+
+If using PostgreSQL in production environment 
+```bash
+pip install psycopg2-binary
+
+```
+
+Update Django settings (settings.py):
+Short Explanation: When deploying a Django application to Heroku, you typically use PostgreSQL as the database. Heroku provides the database URL as an environment variable, and `dj_database_url` helps you easily configure your Django settings to use this URL.
+```bash
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+
+```
