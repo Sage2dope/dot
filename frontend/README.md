@@ -12,5 +12,16 @@ I'm a Data Analyst & Developer<br>I've spent the last 4 years building, scaling 
 
 
 
-# 💻 Getting Started With Contact Web App 
+# 👋 Getting Started With Contact Management App 
 
+
+
+
+#  🐍 Backend Setup Instructions 
+
+1. Clone the repository 
+
+```bash
+git clone <your-repo-url>
+
+cd dot 
