@@ -54,5 +54,17 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-
+6. Run the command to populate the template needed for the project environment variables
+```bash
 cp .env.example .env
+```
+
+7. Apply Migrations to create the database
+```bash
+python manage.py migrate
+```
+
+8. Start the development server
+```bash
+python manage.py runserver
+```
