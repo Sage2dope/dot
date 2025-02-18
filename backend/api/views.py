@@ -6,6 +6,7 @@ from rest_framework import generics
 # Create your views here.
 
 
+# List all contacts / create a new one
 class ContactListCreate(generics.ListCreateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
@@ -16,7 +17,7 @@ class ContactListCreate(generics.ListCreateAPIView):
         else:
             print(serializer.errors)
 
-
+# Deleting a contact
 class DeleteContact(generics.DestroyAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
@@ -24,7 +25,7 @@ class DeleteContact(generics.DestroyAPIView):
     def perform_destroy(self, instance):
         instance.delete()
 
-
+# Updating a contact
 class UpdateContact(generics.UpdateAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer

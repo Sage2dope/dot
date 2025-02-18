@@ -1,7 +1,8 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-from datetime import timedelta
+
+
 
 
 load_dotenv()
@@ -14,10 +15,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+ab!wiu0&y2saj_@2n=wzyd+vt_22nkxujj7ul5m@$a%qaqp6r'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
