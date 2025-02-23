@@ -89,7 +89,7 @@ function Form() {
         setEditContactId(contact.id);
     };
     
-    // Reset the form
+    // Reset the form after the contact is submitted or updated
     const resetForm = () => {
         setName('');
         setPhone('');
@@ -150,7 +150,7 @@ function Form() {
     );
 };
 
-// Contact card component
+// Contact card component for displaying saved and updated contacts
 const ContactCard = ({ contacts, onDelete, onEdit }) => {
     return (
         <div className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-lg bg-slate-800 shadow-2xl p-0.5 transition-all duration-500 hover:scale-[1.01] hover:bg-slate-800/50">
